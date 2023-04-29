@@ -24,7 +24,7 @@ public class BookRestController {
         this.bookService = bookService;
     }
 
-    @GetMapping("/listBooks")
+    @GetMapping()
     //izlistaj gi site knigi
     public List<Book> listAll(){
         return this.bookService.listAll();

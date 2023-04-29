@@ -1,0 +1,6 @@
+{
+  "name": "Library App",
+  "short_name": "My App",
+  "start_url": "/",
+  "display": "standalone"
+}

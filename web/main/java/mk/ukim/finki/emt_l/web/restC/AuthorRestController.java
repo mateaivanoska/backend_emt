@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/author")
-@CrossOrigin
+@CrossOrigin("http://localhost:3000")
 public class AuthorRestController {
     private  final AuthorService authorService;
 
@@ -19,7 +19,7 @@ public class AuthorRestController {
         this.authorService = authorService;
     }
     //site avtori izlistaj
-    @GetMapping("/authorsList")
+    @GetMapping()
     public List<Author> listAuthor(){
          return  this.authorService.listAll();
     }
